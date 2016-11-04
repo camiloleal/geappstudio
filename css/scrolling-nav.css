@@ -1,0 +1,181 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.black-background {
+    background-color:#000000;
+}
+
+.white {
+    color:#ffffff;
+}
+
+.navbar {
+    background: #323032;
+    padding: 0;
+    height: 55px;
+}
+
+.navbar-default {
+    border-color: transparent;
+}
+
+.nav-titles {
+    color: #d8d8d8 !important;
+}
+
+.nav-titles:hover {
+    color: grey !important;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+}
+
+.logo {
+    height: 30px;
+    margin: 11px;
+}
+
+.carousel-indicators li {
+    background: black
+}
+
+.carousel-indicators > li.active {
+    background: grey
+}
+
+#myCarousel a img {
+    width:  50px !important;
+    height: 50px !important;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto; 
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-img {
+    background-image: url(../img/banner.png);
+}
+
+.what-do-we-do-section {
+    padding: 30px 0 10px 0;
+    text-align: center;
+}
+
+.what-do-we-do-section img {
+    height: 100px;
+    margin-top: 40px;
+}
+
+.our-coustomers-section {
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.our-coustomers-section img {
+    width: 17%;
+    margin: 0 20px 0 20px;
+}
+
+.how-to-help-section {
+    padding: 10px 0 30px 0;
+    margin: 30px;
+    text-align: center;
+}
+
+.how-to-help-section input {
+    margin: 10px;
+}
+
+.how-to-help-section textarea {
+    height: 130px;
+    width: 400px !important;
+    margin-top: 10px;
+}
+
+.how-to-help-section button {
+    width: 100px;
+    margin-right: 10px     
+}
+
+.form-contact div:first-child{
+    text-align: right;
+}
+
+.form-contact div:last-child{
+    padding: 0px;
+    text-align: left;
+}
+
+footer {
+    background: #D8D8D8;
+    padding-bottom: 20px
+}
+
+footer h3{
+    text-align: center;
+}
+
+footer p{
+    margin: 0px;
+    
+}
+
+footer span p{
+    text-align: end;
+}
+
+@font-face {
+    font-family: "josefinsans-light";
+    src: url(../fonts/JosefinSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "josefinsans-semibold";
+    src: url(../fonts/JosefinSans-SemiBold.ttf) format("truetype");
+}
+
+section, 
+footer {
+    font-family: "josefinsans-light";
+    color: #000;
+    font-size:17px;
+}
+
+section h3,
+footer h3 {
+    font-family: "josefinsans-semibold";
+    color: #000;
+    font-size:20px;
+}
