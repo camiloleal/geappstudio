@@ -8,6 +8,14 @@ html {
     height: 100%;
 }
 
+@media(max-width:767px) {
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent;
+        background: #323032;
+        opacity: 0.6;
+    }
+}
+
 .black-background {
     background-color:#000000;
 }
@@ -89,7 +97,7 @@ html {
 }
 
 .what-do-we-do-section {
-    padding: 30px 0 10px 0;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -99,7 +107,7 @@ html {
 }
 
 .our-coustomers-section {
-    padding: 10px 0 10px 0;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -109,33 +117,18 @@ html {
 }
 
 .how-to-help-section {
-    padding: 10px 0 30px 0;
+    padding: 50px 0 30px 0;
     margin: 30px;
     text-align: center;
 }
 
-.how-to-help-section input {
-    margin: 10px;
+.how-to-help-section h3 {
+    margin-bottom: 30px;
 }
 
-.how-to-help-section textarea {
-    height: 130px;
-    width: 400px !important;
-    margin-top: 10px;
-}
-
-.how-to-help-section button {
+.how-to-help-section input[type=submit] {
     width: 100px;
-    margin-right: 10px     
-}
-
-.form-contact div:first-child{
-    text-align: right;
-}
-
-.form-contact div:last-child{
-    padding: 0px;
-    text-align: left;
+    font-size: 20px;     
 }
 
 footer {
@@ -153,7 +146,7 @@ footer p{
 }
 
 footer span p{
-    text-align: end;
+    text-align: center;
 }
 
 @font-face {

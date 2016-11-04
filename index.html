@@ -11,7 +11,7 @@
       <title>Gappstudio</title>
 
       <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/scrolling-nav.css" rel="stylesheet">
+      <link href="css/base.css" rel="stylesheet">
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -55,7 +55,7 @@
           <!-- /.container -->
       </nav>
 
-      <header id="myCarousel" class="carousel slide">
+      <header id="myCarousel" class="carousel slide row">
           <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -165,30 +165,48 @@
                       <h3>¿Como te podemos ayudar?</h3>
                   </div>
 
-                  <div class="col-lg-10 col-lg-push-1 form-contact">
-                      <form class="form-inline">
-                          <div class="col-lg-6">
-                              <div class="form-group">
-                                  <input class="form-control" id="contact-name" placeholder="Nombre*">
+                  <form id="contact-form" method="post" action="contact.php" role="form">
+                      <div class="controls col-md-9 col-md-offset-3">
+
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Nombre *" required="required" data-error="Firstname is required.">
+                                  </div>
                               </div>
-                              <div class="form-group">
-                                  <input class="form-control" id="contact-company" placeholder="Empresa*">
-                              </div>
-                              <div class="form-group">
-                                  <input class="form-control" id="contact-phone" placeholder="Telefono*">
-                              </div>
-                              <div class="form-group">
-                                  <input type="email" class="form-control" id="contact-email" placeholder="Email*">
-                              </div>
-                              <button type="submit" class="btn btn-default black-background white">Enviar</button>
-                          </div>
-                          <div class="col-lg-4">
-                              <div class="form-group">
-                                  <textarea class="form-control" id="contact-description" placeholder="Descripción*"></textarea>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Apellido *" required="required" data-error="Lastname is required.">
+                                  </div>
                               </div>
                           </div>
-                      </form>
-                  </div>
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Email *" required="required" data-error="Valid email is required.">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Telefono">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="form-group">
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <input type="submit" class="btn btn-default black-background white" value="Enviar">
+                              </div>
+                          </div>
+
+                      </div>
+                  </form>
 
               </div>
           </div>
@@ -197,18 +215,18 @@
       <footer id="footer" class="footer">
           <div class="container">
               <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-md-12">
                       <h3>Contactanos</h3>
                   </div>
-                  <div class="col-lg-6">
-                      <span>
-                        <p>info@geappstudio.com</p>
-                      </span>
-                  </div>
-                  <div class="col-lg-6">
-                      <p>+57 (1) 407 24 00</p>
-                      <p>+57 (1) 313 448 47 51</p>
-                      <p>+57 (1) 319 250 57 98</p>
+                  <div class="col-md-12 col-xs-12">
+                      <div class="col-md-2 col-md-offset-4 col-xs-5 col-xs-offset-1">
+                          <span><p>info@geappstudio.com</p></span>
+                      </div>
+                      <div class="col-md-6 col-xs-6">
+                          <p>+57 (1) 407 24 00</p>
+                          <p>+57 (1) 313 448 47 51</p>
+                          <p>+57 (1) 319 250 57 98</p>
+                      </div>
                   </div>
               </div>
           </div>
