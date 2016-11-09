@@ -189,7 +189,19 @@ footer p{
 }
 
 footer span p{
-    text-align: center;
+    text-align: right;
+}
+
+.row.vdivide [class*='col-']:not(:last-child):after {
+    background: #000;
+    width: 1px;
+    content: "";
+    display:block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    min-height: 70px;
 }
 
 @font-face {
