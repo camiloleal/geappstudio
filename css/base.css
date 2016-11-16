@@ -14,6 +14,11 @@ html {
         background: #323032;
         opacity: 0.6;
     }
+    .social-icons {
+        position: initial !important;
+        width: 230px;
+        margin: 0 auto;
+    }
 }
 
 @media(min-width:994px) {
@@ -35,10 +40,15 @@ html {
     .navbar-header {
         float:none;
     }
+    .social-icons {
+        position: initial !important;
+        width: 230px;
+        margin: 0 auto;
+    }
 }
 
-.black-background {
-    background-color:#000000;
+.blue-background {
+    background-color: #0086B4;
 }
 
 .white {
@@ -60,7 +70,7 @@ html {
 }
 
 .nav-titles:hover {
-    color: grey !important;
+    color: #0086B4 !important;
 }
 
 .navbar-default .navbar-nav>.active>a, 
@@ -113,60 +123,6 @@ html {
     -o-background-size: cover;
 }
 
-.carousel-img {
-    background-image: url(../img/banner.png);
-}
-
-.carousel-text {
-    width: 30rem;
-    position: absolute;
-    left: calc(50% - 15rem);
-    top: 15%;
-    text-align: center;
-}
-
-.carousel-text h1 {
-    font-family: "josefinsans-light";
-    color: #000;
-    font-size:32px;
-}
-
-.carousel-text h4 {
-    font-family: "josefinsans-semibold";
-    color: #000;
-    font-size:20px;
-    font-weight: bold;
-}
-
-.carousel-images {
-    width: 100%;
-    height: 80%;
-    top: 42%;
-    text-align:center;
-    position: absolute;
-}
-
-.carousel-images img {
-    display: inline-block;
-    width: 20%;
-    height: 20%;
-}
-
-.carousel-button {
-    width: 30rem;
-    position: absolute;
-    left: calc(50% - 15rem);
-    top: 70%;
-    text-align: center;
-}
-
-.carousel-button a {
-    font-family: "josefinsans-semibold";
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 15px;
-}
-
 .what-do-we-do-section {
     padding-top: 50px;
     text-align: center;
@@ -207,8 +163,14 @@ html {
     font-size: 20px;     
 }
 
+.how-to-help-section input,
+.how-to-help-section textarea {
+    border-width: 2px;
+    border-color: rgb(0, 134, 180);
+}
+
 footer {
-    background: #D8D8D8;
+    background: #0086B4;
     padding-bottom: 20px
 }
 
@@ -218,15 +180,28 @@ footer h3{
 
 footer p{
     margin: 0px;
-    
+    color: white;
 }
 
 footer span p{
     text-align: right;
 }
 
+section, 
+footer {
+    font-family: "josefinsans-light";
+    font-size:17px;
+}
+
+section h3,
+footer h3 {
+    font-family: "josefinsans-semibold";
+    color: #000;
+    font-size:20px;
+}
+
 .row.vdivide [class*='col-']:not(:last-child):after {
-    background: #000;
+    background: white;
     width: 1px;
     content: "";
     display:block;
@@ -237,6 +212,21 @@ footer span p{
     min-height: 70px;
 }
 
+.footer-info {
+    padding: 0px;
+}
+
+.social-icons {
+    position: absolute;
+}
+
+.social-icons li {
+    width: 40px;
+    display: inline;
+    float: left;
+    margin: 5px;
+}
+
 @font-face {
     font-family: "josefinsans-light";
     src: url(../fonts/JosefinSans-Light.ttf) format("truetype");
@@ -245,18 +235,4 @@ footer span p{
 @font-face {
     font-family: "josefinsans-semibold";
     src: url(../fonts/JosefinSans-SemiBold.ttf) format("truetype");
-}
-
-section, 
-footer {
-    font-family: "josefinsans-light";
-    color: #000;
-    font-size:17px;
-}
-
-section h3,
-footer h3 {
-    font-family: "josefinsans-semibold";
-    color: #000;
-    font-size:20px;
 }
