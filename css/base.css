@@ -19,7 +19,7 @@ html {
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: transparent;
         background: #323032;
-        opacity: 0.6;
+        opacity: 0.9;
     }
     .social-icons {
         position: initial !important;
@@ -33,7 +33,7 @@ html {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .navbar-collapse.collapse {
         display: none !important;
     }
@@ -41,7 +41,7 @@ html {
         display: block !important;
     }
     .navbar-header .collapse, .navbar-toggle {
-        display:block !important;
+        display: block !important;
     }
     .navbar-header {
         float:none;
@@ -65,6 +65,7 @@ html {
     background: #323032;
     padding: 0;
     height: 55px;
+    opacity: 0.9;
 }
 
 .navbar-default {
@@ -83,6 +84,10 @@ html {
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover {
     background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
 }
 
 .logo {
@@ -153,8 +158,13 @@ html {
 
 .our-team-section {
     padding-top: 50px;
-    text-align: center;
     background-color: gainsboro;
+    text-align: center;
+}
+
+.our-team-section p {
+    text-align: justify;
+    margin: 0px 10px;
 }
 
 .our-team-section img{
@@ -256,11 +266,11 @@ html {
 }
 
 footer {
-    background: #0086B4;
+    background: #323032;
     padding-bottom: 20px;
 }
 
-footer h3{
+footer h2{
     text-align: center;
 }
 
@@ -277,6 +287,13 @@ section,
 footer {
     font-family: "josefinsans-light";
     font-size:17px;
+}
+
+section h2,
+footer h2 {
+    font-family: "josefinsans-semibold";
+    color: #0086B6;
+    font-size:24px;
 }
 
 section h3,
