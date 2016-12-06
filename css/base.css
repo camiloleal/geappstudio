@@ -15,36 +15,48 @@ html {
     text-align: right;
 }
 
-@media(max-width:767px) {
+@media(max-width: 1200px) {
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: transparent;
         background: #323032;
         opacity: 0.9;
     }
-    .social-icons {
-        position: initial !important;
-        width: 230px;
-        margin: 0 auto;
-    }
-}
-
-@media(min-width:994px) {
-    .navbar-collapse li{
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-collapse.collapse.in {
-        display: block !important;
-    }
-    .navbar-header .collapse, .navbar-toggle {
-        display: block !important;
-    }
     .navbar-header {
-        float:none;
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
     }
     .social-icons {
         position: initial !important;
